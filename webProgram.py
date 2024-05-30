@@ -9,7 +9,7 @@ st.title('🍎🍐🍊 나의 AI Chat 🥝🍅🍆')
 openai_api_key = st.sidebar.text_input('OpenAI API Key')
 
 def generate_response(input_text):
-    llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key, max_tokens=500)  # max_tokens 값을 늘려 더 긴 응답을 받도록 설정
+    llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key, max_tokens=1000)  # max_tokens 값을 늘려 더 긴 응답을 받도록 설정
     st.info(llm(input_text))
 
 with st.form('my_form'):
